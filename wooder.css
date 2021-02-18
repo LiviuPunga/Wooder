@@ -222,19 +222,24 @@ nav ul li a:hover {
     max-width: 80%;
     border: 15px solid #fff;
     border-radius: 110px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
 }
 
 .under-img {
     margin: auto 50px;
     padding-top: 20px;
     font-weight: 600;
+    text-align: center;
+    cursor: pointer;
 }
 
 .play {
     opacity: 1;
     position: absolute;
-    left: calc(50% - 43px);
-    top: calc(50% - 41px);
+    left: 50%;
+    top: 50%;
     width: 40px;
     height: 49px;
     background-image: url(images/play.png);
@@ -243,6 +248,7 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-color: transparent;
     cursor: pointer;
+    transform: translate(-50%, -50%);
 }
 
 .videoplayer {
@@ -348,10 +354,25 @@ nav ul li a:hover {
 
 .player-container .button2 img {
     position: absolute;
+    left: 20%;
+    top: 50%;
+    width: 25px;
+    height: 24px;
+    background-image: url(images/playerbutton.png);
+    background-size: 30px 30px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+
+   
+
+/* .player-container .button2 img{
+    position: absolute;
     left: 50px;
     bottom: 5px;
     max-width: 25px;
-}
+} */
 
 .about-us-container {
     margin: 3rem 10rem;
@@ -449,6 +470,12 @@ nav a {
 }
 
 
+.video-teaser {
+    position: relative;
+}
+
+
+
 @media all and (max-width: 980px) {
 
     nav {
@@ -486,10 +513,7 @@ nav a {
     text-align: center;
     }
 
-   .play {
-    left: calc(50% - 13px);
-    top: calc(50% - 41px);
-     }
+
 
    .player {
     background-image: url(images/video4.png);
@@ -513,7 +537,7 @@ nav a {
         background: transparent;
         cursor: pointer;
         color: #ffff;
-        padding: 4px 75px;
+        padding: 9px 75px;
         border: 2px solid;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -620,10 +644,102 @@ nav a {
     }
 
     .close-video {
-        right: 5%;
-        top: 4%;
+        right: 17%;
+        top: 22%;
         z-index: 1;
         background: black;
     }
 }
+
+
+
+@media (max-width: 1200px)  {
+    .close-video {
+        right: 24%;
+        top: 17%;
+    }
+}
+
+@media (max-width: 1024px)  {
+    .close-video {
+        right: 20%;
+        top: 17%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    iframe {
+        width: 450px;
+        height: 270px;
+    }
+
+    .close-video {
+        right: 21%;
+        top: 22%;
+    }
+}
+
+@media (max-width: 640px) {
+    iframe {
+        width: 420px;
+        height: 250px;
+    }
+
+    .close-video {
+        right: 17%;
+        top: 24%;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    .close-video {
+        right: 3%;
+        top: 16%;
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    .title h1 {
+        font-size: 50px;
+    }
+
+    .button {
+        padding: 3px 2px;
+    }
+
+    .product-info p {
+        font-size: 12px;
+    }
+
+    .under-img {
+        font-size: 14px;
+    }
+
+    .player-container .titlu h2 {
+        font-size: 35px;
+    }
+
+    .player-container .para p {
+        font-size: 14px;
+    }
+
+    .player-container .button2 img {
+        left: 40px;
+        max-width: 25px;
+    }
+
+    .about-us-container p {
+        font-size: 15px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 200px;
+    }
+}
+
 
